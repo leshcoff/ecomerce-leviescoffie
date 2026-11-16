@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../../vendor/livewire/livewire/src/Features/SupportPagination/views/*.blade.php';
+[x-cloak] { display: none !important; }
+
+
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-lila-50:  #f8f3fc;
+    --color-lila-100: #efe5f7;
+    --color-lila-200: #dcc6ec;   /* fondo del banner */
+    --color-lila-700: #6a2c91;   /* texto morado del banner */
+
+    /* Color primario de la marca (botón "Ir a pagar") */
+    --color-primary-50:  #f8f3fc;
+    --color-primary-100: #efe5f7;
+    --color-primary-200: #dcc6ec;   /* lila del banner */
+    --color-primary-300: #c4a2df;
+    --color-primary-400: #a473c8;
+    --color-primary-500: #874dae;
+    --color-primary-600: #682f8b;   /* PRIMARIO: botones */
+    --color-primary-700: #552472;   /* hover del botón */
+    --color-primary-800: #421c59;
+}
