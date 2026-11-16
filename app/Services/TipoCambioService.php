@@ -31,7 +31,7 @@ class TipoCambioService
         }
 
         try {
-            $valor = (float) Http::timeout(5)
+            $valor = (float) Http::timeout(10)
                 ->retry(2, 300)
                 ->get(config('services.tipo_cambio.url'))
                 ->throw()

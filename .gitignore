@@ -28,3 +28,9 @@ Homestead.json
 .env.production
 .phpactor.json
 auth.json
+
+
+# Sistema operativo y editores
+.DS_Store
+/.idea
+/.vscode
