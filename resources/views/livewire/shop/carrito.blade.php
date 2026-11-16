@@ -79,15 +79,15 @@
             <div class="space-y-2 border-t border-primary-100 bg-primary-50 px-5 py-4 text-sm">
                 <div class="flex justify-between">
                     <span>Subtotal</span>
-                    <x-precio :mxn="$totales['mxn']['subtotal']" :usd="$totales['usd']['subtotal']" />
+                    <x-precio :mxn="$totales['mxn']['subtotal']" :usd="$totales['usd']['subtotal'] ?? null" />
                 </div>
                 <div class="flex justify-between">
                     <span>IVA (16 %)</span>
-                    <x-precio :mxn="$totales['mxn']['iva']" :usd="$totales['usd']['iva']" />
+                    <x-precio :mxn="$totales['mxn']['iva']" :usd="$totales['usd']['iva'] ?? null" />
                 </div>
                 <div class="flex justify-between text-base font-bold text-primary-700">
                     <span>Total</span>
-                    <x-precio :mxn="$totales['mxn']['total']" :usd="$totales['usd']['total']" />
+                    <x-precio :mxn="$totales['mxn']['total']" :usd="$totales['usd']['total'] ?? null" />
                 </div>
 
                 @if (Route::has('checkout'))
